@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\shireeuk\AppData\Local\Temp\testng-eclipse--854767186\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>7 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testCreateTask">testCreateTask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testCreateTaskWithDifferentPriorities(Gardening, Gardening and Cleaning, 2025-10-07, LOW)">testCreateTaskWithDifferentPriorities(Gardening, Gardening and Cleaning, 2025-10-07, LOW)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testCreateTaskWithDifferentPriorities(Laundry, Washing Clothes, 2025-10-06, MEDIUM)">testCreateTaskWithDifferentPriorities(Laundry, Washing Clothes, 2025-10-06, MEDIUM)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testCreateTaskWithDifferentPriorities(Badminton, Play Badminton, 2025-10-05, HIGH)">testCreateTaskWithDifferentPriorities(Badminton, Play Badminton, 2025-10-05, HIGH)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testCreateTaskWithEmptyTitleThrows">testCreateTaskWithEmptyTitleThrows</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testDeleteTaskAndEnsureRemoval">testDeleteTaskAndEnsureRemoval</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testDueDateValidation(2025-10-03, true)">testDueDateValidation(2025-10-03, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testDueDateValidation(2025-10-05, false)">testDueDateValidation(2025-10-05, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testDueDateValidation(2025-10-04, false)">testDueDateValidation(2025-10-04, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testDuplicateTaskCreationThrows">testDuplicateTaskCreationThrows</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testGetTasksByStatusReturnsCorrectList">testGetTasksByStatusReturnsCorrectList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.util.DateValidatorTest" class="method navigator-link" hash-for-method="testParseDate(2025-13-01, false)">testParseDate(2025-13-01, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.util.DateValidatorTest" class="method navigator-link" hash-for-method="testParseDate(2024-02-29, true)">testParseDate(2024-02-29, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.util.DateValidatorTest" class="method navigator-link" hash-for-method="testParseDate(2025-10-10, true)">testParseDate(2025-10-10, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.util.DateValidatorTest" class="method navigator-link" hash-for-method="testParseDate(2025-02-29, false)">testParseDate(2025-02-29, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.util.DateValidatorTest" class="method navigator-link" hash-for-method="testParseDate(invalid-date, false)">testParseDate(invalid-date, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.ReportServiceTests" class="method navigator-link" hash-for-method="testPrioritySummary">testPrioritySummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.ReportServiceTests" class="method navigator-link" hash-for-method="testStatusSummary">testStatusSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testTaskWithLargeDescription">testTaskWithLargeDescription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testUpdateNonExistingTaskThrows">testUpdateNonExistingTaskThrows</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.taskmanager.service.TaskServiceTests" class="method navigator-link" hash-for-method="testUpdateTask">testUpdateTask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.taskmanager.util.DateValidatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParseDate(2025-13-01, false)">
+                  </a> <!-- testParseDate(2025-13-01, false) -->
+                  <span class="method-name">testParseDate</span>
+                  <span class="parameters">(2025-13-01,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParseDate(2024-02-29, true)">
+                  </a> <!-- testParseDate(2024-02-29, true) -->
+                  <span class="method-name">testParseDate</span>
+                  <span class="parameters">(2024-02-29,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParseDate(2025-10-10, true)">
+                  </a> <!-- testParseDate(2025-10-10, true) -->
+                  <span class="method-name">testParseDate</span>
+                  <span class="parameters">(2025-10-10,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParseDate(2025-02-29, false)">
+                  </a> <!-- testParseDate(2025-02-29, false) -->
+                  <span class="method-name">testParseDate</span>
+                  <span class="parameters">(2025-02-29,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParseDate(invalid-date, false)">
+                  </a> <!-- testParseDate(invalid-date, false) -->
+                  <span class="method-name">testParseDate</span>
+                  <span class="parameters">(invalid-date,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.taskmanager.service.ReportServiceTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPrioritySummary">
+                  </a> <!-- testPrioritySummary -->
+                  <span class="method-name">testPrioritySummary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStatusSummary">
+                  </a> <!-- testStatusSummary -->
+                  <span class="method-name">testStatusSummary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.taskmanager.service.TaskServiceTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateTask">
+                  </a> <!-- testCreateTask -->
+                  <span class="method-name">testCreateTask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateTaskWithDifferentPriorities(Gardening, Gardening and Cleaning, 2025-10-07, LOW)">
+                  </a> <!-- testCreateTaskWithDifferentPriorities(Gardening, Gardening and Cleaning, 2025-10-07, LOW) -->
+                  <span class="method-name">testCreateTaskWithDifferentPriorities</span>
+                  <span class="parameters">(Gardening,Gardening and Cleaning,2025-10-07,LOW)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateTaskWithDifferentPriorities(Laundry, Washing Clothes, 2025-10-06, MEDIUM)">
+                  </a> <!-- testCreateTaskWithDifferentPriorities(Laundry, Washing Clothes, 2025-10-06, MEDIUM) -->
+                  <span class="method-name">testCreateTaskWithDifferentPriorities</span>
+                  <span class="parameters">(Laundry,Washing Clothes,2025-10-06,MEDIUM)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateTaskWithDifferentPriorities(Badminton, Play Badminton, 2025-10-05, HIGH)">
+                  </a> <!-- testCreateTaskWithDifferentPriorities(Badminton, Play Badminton, 2025-10-05, HIGH) -->
+                  <span class="method-name">testCreateTaskWithDifferentPriorities</span>
+                  <span class="parameters">(Badminton,Play Badminton,2025-10-05,HIGH)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateTaskWithEmptyTitleThrows">
+                  </a> <!-- testCreateTaskWithEmptyTitleThrows -->
+                  <span class="method-name">testCreateTaskWithEmptyTitleThrows</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteTaskAndEnsureRemoval">
+                  </a> <!-- testDeleteTaskAndEnsureRemoval -->
+                  <span class="method-name">testDeleteTaskAndEnsureRemoval</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDueDateValidation(2025-10-03, true)">
+                  </a> <!-- testDueDateValidation(2025-10-03, true) -->
+                  <span class="method-name">testDueDateValidation</span>
+                  <span class="parameters">(2025-10-03,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDueDateValidation(2025-10-05, false)">
+                  </a> <!-- testDueDateValidation(2025-10-05, false) -->
+                  <span class="method-name">testDueDateValidation</span>
+                  <span class="parameters">(2025-10-05,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDueDateValidation(2025-10-04, false)">
+                  </a> <!-- testDueDateValidation(2025-10-04, false) -->
+                  <span class="method-name">testDueDateValidation</span>
+                  <span class="parameters">(2025-10-04,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDuplicateTaskCreationThrows">
+                  </a> <!-- testDuplicateTaskCreationThrows -->
+                  <span class="method-name">testDuplicateTaskCreationThrows</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetTasksByStatusReturnsCorrectList">
+                  </a> <!-- testGetTasksByStatusReturnsCorrectList -->
+                  <span class="method-name">testGetTasksByStatusReturnsCorrectList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTaskWithLargeDescription">
+                  </a> <!-- testTaskWithLargeDescription -->
+                  <span class="method-name">testTaskWithLargeDescription</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateNonExistingTaskThrows">
+                  </a> <!-- testUpdateNonExistingTaskThrows -->
+                  <span class="method-name">testUpdateNonExistingTaskThrows</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateTask">
+                  </a> <!-- testUpdateTask -->
+                  <span class="method-name">testUpdateTask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\shireeuk\AppData\Local\Temp\testng-eclipse--854767186\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.taskmanager.service.TaskServiceTests&quot;/&gt;
+      &lt;class name=&quot;com.taskmanager.service.ReportServiceTests&quot;/&gt;
+      &lt;class name=&quot;com.taskmanager.util.DateValidatorTest&quot;/&gt;
+      &lt;class name=&quot;com.taskmanager.PersonalTaskManagerApplicationTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">edgeCases</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testTaskWithLargeDescription</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">exception</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdateNonExistingTaskThrows</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">filtering</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetTasksByStatusReturnsCorrectList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">stateBased</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDeleteTaskAndEnsureRemoval</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetTasksByStatusReturnsCorrectList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">statistics</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPrioritySummary</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testStatusSummary</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">taskOperations</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateTask</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateTaskWithDifferentPriorities</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDeleteTaskAndEnsureRemoval</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdateTask</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">validation</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateTaskWithEmptyTitleThrows</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDueDateValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDuplicateTaskCreationThrows</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testParseDate')
+data.setCell(0, 2, 'com.taskmanager.util.DateValidatorTest')
+data.setCell(0, 3, 8);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCreateTaskWithDifferentPriorities')
+data.setCell(1, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(1, 3, 7);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testPrioritySummary')
+data.setCell(2, 2, 'com.taskmanager.service.ReportServiceTests')
+data.setCell(2, 3, 4);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDueDateValidation')
+data.setCell(3, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(3, 3, 3);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testGetTasksByStatusReturnsCorrectList')
+data.setCell(4, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(4, 3, 3);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDeleteTaskAndEnsureRemoval')
+data.setCell(5, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(5, 3, 2);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testDuplicateTaskCreationThrows')
+data.setCell(6, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testParseDate')
+data.setCell(7, 2, 'com.taskmanager.util.DateValidatorTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testCreateTask')
+data.setCell(8, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testCreateTaskWithDifferentPriorities')
+data.setCell(9, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testUpdateTask')
+data.setCell(10, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testTaskWithLargeDescription')
+data.setCell(11, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testCreateTaskWithDifferentPriorities')
+data.setCell(12, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testDueDateValidation')
+data.setCell(13, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testStatusSummary')
+data.setCell(14, 2, 'com.taskmanager.service.ReportServiceTests')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testCreateTaskWithEmptyTitleThrows')
+data.setCell(15, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testDueDateValidation')
+data.setCell(16, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testParseDate')
+data.setCell(17, 2, 'com.taskmanager.util.DateValidatorTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testParseDate')
+data.setCell(18, 2, 'com.taskmanager.util.DateValidatorTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testUpdateNonExistingTaskThrows')
+data.setCell(19, 2, 'com.taskmanager.service.TaskServiceTests')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testParseDate')
+data.setCell(20, 2, 'com.taskmanager.util.DateValidatorTest')
+data.setCell(20, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 41 ms</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.taskmanager.service.TaskServiceTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCreateTaskWithDifferentPriorities(Badminton, Play Badminton, 2025-10-05, HIGH)</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testCreateTaskWithDifferentPriorities(Laundry, Washing Clothes, 2025-10-06, MEDIUM)</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testCreateTaskWithDifferentPriorities(Gardening, Gardening and Cleaning, 2025-10-07, LOW)</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testCreateTaskWithEmptyTitleThrows</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDueDateValidation(2025-10-05, false)</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">59 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDueDateValidation(2025-10-04, false)</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDueDateValidation(2025-10-03, true)</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDuplicateTaskCreationThrows</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetTasksByStatusReturnsCorrectList</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">82 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testTaskWithLargeDescription</span>
+                <span class="method-start">83 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">85 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testUpdateNonExistingTaskThrows</span>
+                <span class="method-start">87 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">88 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testCreateTask</span>
+                <span class="method-start">89 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">90 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testUpdateTask</span>
+                <span class="method-start">91 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDeleteTaskAndEnsureRemoval</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">96 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.taskmanager.service.ReportServiceTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">98 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPrioritySummary</span>
+                <span class="method-start">101 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testStatusSummary</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.taskmanager.util.DateValidatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testParseDate(2025-10-10, true)</span>
+                <span class="method-start">109 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testParseDate(2025-02-29, false)</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testParseDate(2024-02-29, true)</span>
+                <span class="method-start">120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testParseDate(2025-13-01, false)</span>
+                <span class="method-start">121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testParseDate(invalid-date, false)</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

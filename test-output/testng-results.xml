@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-04T11:34:03 IST" name="Default suite" finished-at="2025-10-04T11:34:03 IST" duration-ms="147">
+    <groups>
+      <group name="exception">
+        <method signature="TaskServiceTests.testUpdateNonExistingTaskThrows()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testUpdateNonExistingTaskThrows" class="com.taskmanager.service.TaskServiceTests"/>
+      </group> <!-- exception -->
+      <group name="edgeCases">
+        <method signature="TaskServiceTests.testTaskWithLargeDescription()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testTaskWithLargeDescription" class="com.taskmanager.service.TaskServiceTests"/>
+      </group> <!-- edgeCases -->
+      <group name="taskOperations">
+        <method signature="TaskServiceTests.testCreateTaskWithDifferentPriorities(java.lang.String,java.lang.String,java.time.LocalDate,com.taskmanager.model.Priority)[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testCreateTaskWithDifferentPriorities" class="com.taskmanager.service.TaskServiceTests"/>
+        <method signature="TaskServiceTests.testCreateTask()[pri:1, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testCreateTask" class="com.taskmanager.service.TaskServiceTests"/>
+        <method signature="TaskServiceTests.testUpdateTask()[pri:2, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testUpdateTask" class="com.taskmanager.service.TaskServiceTests"/>
+        <method signature="TaskServiceTests.testDeleteTaskAndEnsureRemoval()[pri:3, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testDeleteTaskAndEnsureRemoval" class="com.taskmanager.service.TaskServiceTests"/>
+      </group> <!-- taskOperations -->
+      <group name="stateBased">
+        <method signature="TaskServiceTests.testGetTasksByStatusReturnsCorrectList()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testGetTasksByStatusReturnsCorrectList" class="com.taskmanager.service.TaskServiceTests"/>
+        <method signature="TaskServiceTests.testDeleteTaskAndEnsureRemoval()[pri:3, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testDeleteTaskAndEnsureRemoval" class="com.taskmanager.service.TaskServiceTests"/>
+      </group> <!-- stateBased -->
+      <group name="filtering">
+        <method signature="TaskServiceTests.testGetTasksByStatusReturnsCorrectList()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testGetTasksByStatusReturnsCorrectList" class="com.taskmanager.service.TaskServiceTests"/>
+      </group> <!-- filtering -->
+      <group name="validation">
+        <method signature="TaskServiceTests.testCreateTaskWithEmptyTitleThrows()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testCreateTaskWithEmptyTitleThrows" class="com.taskmanager.service.TaskServiceTests"/>
+        <method signature="TaskServiceTests.testDueDateValidation(java.time.LocalDate,boolean)[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testDueDateValidation" class="com.taskmanager.service.TaskServiceTests"/>
+        <method signature="TaskServiceTests.testDuplicateTaskCreationThrows()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" name="testDuplicateTaskCreationThrows" class="com.taskmanager.service.TaskServiceTests"/>
+      </group> <!-- validation -->
+      <group name="statistics">
+        <method signature="ReportServiceTests.testPrioritySummary()[pri:0, instance:com.taskmanager.service.ReportServiceTests@3214ee6]" name="testPrioritySummary" class="com.taskmanager.service.ReportServiceTests"/>
+        <method signature="ReportServiceTests.testStatusSummary()[pri:0, instance:com.taskmanager.service.ReportServiceTests@3214ee6]" name="testStatusSummary" class="com.taskmanager.service.ReportServiceTests"/>
+      </group> <!-- statistics -->
+    </groups>
+    <test started-at="2025-10-04T11:34:03 IST" name="Default test" finished-at="2025-10-04T11:34:03 IST" duration-ms="147">
+      <class name="com.taskmanager.service.TaskServiceTests">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="setUpClass" finished-at="2025-10-04T11:34:03 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testCreateTaskWithDifferentPriorities(java.lang.String,java.lang.String,java.time.LocalDate,com.taskmanager.model.Priority)[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testCreateTaskWithDifferentPriorities" data-provider="priorityProvider" finished-at="2025-10-04T11:34:03 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Badminton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Play Badminton]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2025-10-05]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[HIGH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateTaskWithDifferentPriorities -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testCreateTaskWithDifferentPriorities(java.lang.String,java.lang.String,java.time.LocalDate,com.taskmanager.model.Priority)[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testCreateTaskWithDifferentPriorities" data-provider="priorityProvider" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Laundry]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Washing Clothes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2025-10-06]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[MEDIUM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateTaskWithDifferentPriorities -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testCreateTaskWithDifferentPriorities(java.lang.String,java.lang.String,java.time.LocalDate,com.taskmanager.model.Priority)[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testCreateTaskWithDifferentPriorities" data-provider="priorityProvider" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gardening]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gardening and Cleaning]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2025-10-07]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[LOW]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateTaskWithDifferentPriorities -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testCreateTaskWithEmptyTitleThrows()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testCreateTaskWithEmptyTitleThrows" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <exception class="com.taskmanager.exception.TaskValidationException">
+            <message>
+              <![CDATA[Title is required.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.taskmanager.exception.TaskValidationException: Title is required.
+at com.taskmanager.util.TaskValidator.validate(TaskValidator.java:11)
+at com.taskmanager.service.TaskService.validateTask(TaskService.java:57)
+at com.taskmanager.service.TaskService.createTask(TaskService.java:16)
+at com.taskmanager.service.TaskServiceTests.testCreateTaskWithEmptyTitleThrows(TaskServiceTests.java:86)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.taskmanager.exception.TaskValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateTaskWithEmptyTitleThrows -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testDueDateValidation(java.time.LocalDate,boolean)[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testDueDateValidation" data-provider="dateProvider" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2025-10-05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDueDateValidation -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testDueDateValidation(java.time.LocalDate,boolean)[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testDueDateValidation" data-provider="dateProvider" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2025-10-04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDueDateValidation -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testDueDateValidation(java.time.LocalDate,boolean)[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testDueDateValidation" data-provider="dateProvider" finished-at="2025-10-04T11:34:03 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2025-10-03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDueDateValidation -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testDuplicateTaskCreationThrows()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testDuplicateTaskCreationThrows" finished-at="2025-10-04T11:34:03 IST" duration-ms="2" status="PASS">
+          <exception class="com.taskmanager.exception.DuplicateTaskException">
+            <message>
+              <![CDATA[Duplicate task detected.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.taskmanager.exception.DuplicateTaskException: Duplicate task detected.
+at com.taskmanager.service.TaskService.createTask(TaskService.java:20)
+at com.taskmanager.service.TaskServiceTests.testDuplicateTaskCreationThrows(TaskServiceTests.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.taskmanager.exception.DuplicateTaskException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDuplicateTaskCreationThrows -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testGetTasksByStatusReturnsCorrectList()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testGetTasksByStatusReturnsCorrectList" finished-at="2025-10-04T11:34:03 IST" depends-on-methods="com.taskmanager.service.TaskServiceTests.testCreateTaskWithDifferentPriorities" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTasksByStatusReturnsCorrectList -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testTaskWithLargeDescription()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testTaskWithLargeDescription" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskWithLargeDescription -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testUpdateNonExistingTaskThrows()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testUpdateNonExistingTaskThrows" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <exception class="com.taskmanager.exception.TaskNotFoundException">
+            <message>
+              <![CDATA[Task not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.taskmanager.exception.TaskNotFoundException: Task not found.
+at com.taskmanager.service.TaskService.updateTask(TaskService.java:28)
+at com.taskmanager.service.TaskServiceTests.testUpdateNonExistingTaskThrows(TaskServiceTests.java:92)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.taskmanager.exception.TaskNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateNonExistingTaskThrows -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testCreateTask()[pri:1, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testCreateTask" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateTask -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testUpdateTask()[pri:2, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testUpdateTask" finished-at="2025-10-04T11:34:03 IST" depends-on-methods="com.taskmanager.service.TaskServiceTests.testCreateTask" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTask -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testDeleteTaskAndEnsureRemoval()[pri:3, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="testDeleteTaskAndEnsureRemoval" finished-at="2025-10-04T11:34:03 IST" depends-on-methods="com.taskmanager.service.TaskServiceTests.testUpdateTask" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTaskAndEnsureRemoval -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.taskmanager.service.TaskServiceTests@1a5b6f42]" started-at="2025-10-04T11:34:03 IST" name="cleanUp" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.taskmanager.service.TaskServiceTests -->
+      <class name="com.taskmanager.service.ReportServiceTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.taskmanager.service.ReportServiceTests@3214ee6]" started-at="2025-10-04T11:34:03 IST" name="setup" finished-at="2025-10-04T11:34:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPrioritySummary()[pri:0, instance:com.taskmanager.service.ReportServiceTests@3214ee6]" started-at="2025-10-04T11:34:03 IST" name="testPrioritySummary" finished-at="2025-10-04T11:34:03 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrioritySummary -->
+        <test-method signature="testStatusSummary()[pri:0, instance:com.taskmanager.service.ReportServiceTests@3214ee6]" started-at="2025-10-04T11:34:03 IST" name="testStatusSummary" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusSummary -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.taskmanager.service.ReportServiceTests@3214ee6]" started-at="2025-10-04T11:34:03 IST" name="setup" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.taskmanager.service.ReportServiceTests -->
+      <class name="com.taskmanager.util.DateValidatorTest">
+        <test-method signature="testParseDate(java.lang.String,boolean)[pri:0, instance:com.taskmanager.util.DateValidatorTest@a8ef162]" started-at="2025-10-04T11:34:03 IST" name="testParseDate" data-provider="dateStrings" finished-at="2025-10-04T11:34:03 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2025-10-10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseDate -->
+        <test-method signature="testParseDate(java.lang.String,boolean)[pri:0, instance:com.taskmanager.util.DateValidatorTest@a8ef162]" started-at="2025-10-04T11:34:03 IST" name="testParseDate" data-provider="dateStrings" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2025-02-29]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseDate -->
+        <test-method signature="testParseDate(java.lang.String,boolean)[pri:0, instance:com.taskmanager.util.DateValidatorTest@a8ef162]" started-at="2025-10-04T11:34:03 IST" name="testParseDate" data-provider="dateStrings" finished-at="2025-10-04T11:34:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024-02-29]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseDate -->
+        <test-method signature="testParseDate(java.lang.String,boolean)[pri:0, instance:com.taskmanager.util.DateValidatorTest@a8ef162]" started-at="2025-10-04T11:34:03 IST" name="testParseDate" data-provider="dateStrings" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2025-13-01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseDate -->
+        <test-method signature="testParseDate(java.lang.String,boolean)[pri:0, instance:com.taskmanager.util.DateValidatorTest@a8ef162]" started-at="2025-10-04T11:34:03 IST" name="testParseDate" data-provider="dateStrings" finished-at="2025-10-04T11:34:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid-date]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseDate -->
+      </class> <!-- com.taskmanager.util.DateValidatorTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

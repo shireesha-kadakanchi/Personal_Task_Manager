@@ -1,0 +1,9 @@
+<suite name="Default Suite">
+    <test thread-count="5" name="task-manager">
+        <classes>
+            <class name="com.taskmanager.service.TaskServiceTests"/>
+            <class name="com.taskmanager.service.ReportServiceTests"/>
+            <class name="com.taskmanager.util.DateValidatorTest"/>
+        </classes>
+    </test>
+</suite>
