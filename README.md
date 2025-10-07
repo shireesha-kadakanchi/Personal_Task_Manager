@@ -148,12 +148,13 @@ ProductivityReport report = reportService.generateProductivityReport(
     LocalDate.now()
 );
 
-# Exception Handling
+# Exception Handling 
 The application uses custom exceptions to handle various error scenarios:
 1.TaskNotFoundException: When attempting to access a non-existent task
 2.InvalidDateException: When providing an invalid date format
 3.DuplicateTaskException: When attempting to create a duplicate task
 4.TaskValidationException: When task data fails validation rules
+
 ---Example of handling exceptions:
 try {
     Task task = taskService.getTaskById("non-existent-id");
